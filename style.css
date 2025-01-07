@@ -1,0 +1,137 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 200px;
+}
+
+.nav-items{
+    padding: 0px 20px;
+}
+
+.nav-items > ul{
+    font-size: 24px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.res-card{
+    margin: 0;
+    padding: 10px;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
+    
+}
+
+.res-card:hover{
+    border: 1px solid  black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-logo{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.filter-btn{
+    cursor: pointer;
+    padding: 10px;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Same gap as regular cards */
+}
+
+.shimmer-card {
+    margin: 0;
+    padding: 10px;
+    width: calc(25% - 10px); /* Matches the regular card dimensions */
+    height: auto; /* Adjust height dynamically */
+    box-sizing: border-box;
+    border-radius: 5px; /* Consistent with regular cards */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+}
+
+.shimmer-image {
+    width: 100%;
+    height: 150px; /* Matches image height in `.res-logo` */
+    background: linear-gradient(
+        to right,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmerEffect 1.5s linear infinite;
+    border-radius: 5px;
+}
+
+.shimmer-text {
+    width: 80%; /* Adjust the width for text placeholder */
+    height: 20px;
+    background: linear-gradient(
+        to right,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmerEffect 1.5s linear infinite;
+    border-radius: 3px;
+    margin: 10px 0;
+}
+
+@keyframes shimmerEffect {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.login{
+    padding: 0px 20px;
+    margin: auto;
+    height: 30px;
+}
+
+.filter{
+    display: flex;
+}
+.res-container {
+    display: block; /* Ensures the link behaves like a block-level element */
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits text color from the parent */
+}
+
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+}

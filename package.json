@@ -1,0 +1,29 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is React swiggy clone",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aftab0045/REACT---JS"
+  },
+  "keywords": [],
+  "author": "Aftab",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.11.2"
+  },
+  "browserlist": [
+    "last 2 versions"
+  ]
+}
