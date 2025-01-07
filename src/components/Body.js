@@ -47,9 +47,9 @@ const Body = () =>{
    (
       <div className='body'>
         <div className='filter'>
-          <div className="search">
-            <input type="text" className="search-box" value={searchText} onChange={(e) =>{setSearchText(e.target.value)}} />
-            <button 
+          <div className="search m-4 p-4">
+            <input type="text" className="border border-solid border-black" value={searchText} onChange={(e) =>{setSearchText(e.target.value)}} />
+            <button className="px-4 py-1 bg-blue-300 m-4"
             onClick={() =>{
               console.log(searchText);
 
@@ -61,7 +61,7 @@ const Body = () =>{
             }}>Search</button>
           </div>
             <button 
-            className="filter-btn" 
+            className="px-4 py-1 bg-blue-300 m-4" 
             onClick={() =>{const filterList = listOfRestaurants.filter((res) => res.info.avgRating > 4.3);
                 setListOfRestaurants(filterList);
             }}> 
