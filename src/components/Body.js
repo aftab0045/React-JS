@@ -15,6 +15,8 @@ const Body = () =>{
 
     const [searchText , setSearchText] = useState("");
 
+ 
+
     const onlineStatus = useOnlineStatus();
 
     if (!onlineStatus) {
@@ -33,7 +35,7 @@ const Body = () =>{
 
 
 
-    console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+    
     setListOfRestaurants(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     setFilteredRestaurant(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
     }
@@ -72,6 +74,7 @@ const Body = () =>{
         <div className='flex flex-wrap justify-start items-start'>
   {filteredRestaurant.map((restaurant) => (
     <Link key={restaurant.info.id} to={"/restaurants/" + restaurant.info.id}>
+      
       <RestaurantCard resData={restaurant} />
     </Link>
   ))}
